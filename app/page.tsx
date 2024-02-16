@@ -1,12 +1,19 @@
-import Image from "next/image";
+"use client";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import PortfolioSection from "./components/PortfolioSection";
+import EmailForm from "./components/EmailForm";
 
 export default function Home() {
   return (
-    <main>
+    <main className='font-poppins'>
       <Navbar />
       <Hero />
+      <PortfolioSection />
+      <EmailForm />
+      <Footer />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 const PortfolioSection = () => {
-  return <div>PortfolioSection</div>;
+  return <div className='h-screen'>PortfolioSection</div>;
 };
 
 export default PortfolioSection;
