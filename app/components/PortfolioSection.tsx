@@ -1,7 +1,15 @@
 import React from "react";
+import { IProjects } from "@/types/projects";
+import Project from "./Project";
 
-const PortfolioSection = () => {
-  return <div className='h-screen'>PortfolioSection</div>;
+interface PortfolioSectionProps {
+  projects: IProjects[];
+}
+
+const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
+  console.log("portfolio section");
+  console.log(projects);
+  return <div>hhh</div>;
 };
 
 export default PortfolioSection;
