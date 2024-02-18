@@ -1,4 +1,4 @@
-import mdesignlogo from "../../images/mdesignlogo.png";
+import mdesignlogo from "../../public/images/mdesignlogo.png";
 import Image from "next/image";
 import styles from "../../styles";
 

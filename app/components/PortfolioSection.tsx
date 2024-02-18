@@ -9,7 +9,13 @@ interface PortfolioSectionProps {
 const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
   console.log("portfolio section");
   console.log(projects);
-  return <div>hhh</div>;
+  return (
+    <div>
+      {projects.map((project, index) => (
+        <Project key={index} projects={project} />
+      ))}
+    </div>
+  );
 };
 
 export default PortfolioSection;

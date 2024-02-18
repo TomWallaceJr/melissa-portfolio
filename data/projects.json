@@ -5,14 +5,14 @@
       "group": "1",
       "title": "Cactus",
       "description": "A pointy cactus",
-      "image": "../images/mdesignlogo"
+      "image": "/images/mdesignlogo.png"
     },
     {
       "id": "1",
       "group": "2",
       "title": "Pitch Perfect Poker",
       "description": "Logos for professional poker dealer and blogger",
-      "image": "../images/mdesignlogo"
+      "image": "/images/mdesignlogo.png"
     }
   ]
 }
