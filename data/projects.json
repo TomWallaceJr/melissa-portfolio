@@ -5,14 +5,45 @@
       "group": "1",
       "title": "Cactus",
       "description": "A pointy cactus",
-      "image": "/images/mdesignlogo.png"
+      "image": "/images/mdesignlogo.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
     },
     {
-      "id": "1",
+      "id": "2",
       "group": "2",
       "title": "Pitch Perfect Poker",
       "description": "Logos for professional poker dealer and blogger",
-      "image": "/images/mdesignlogo.png"
+      "image": "/images/mdesignlogo.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "3",
+      "group": "2",
+      "title": "Pitch Perfect Poker",
+      "description": "Logos for professional poker dealer and blogger",
+      "image": "/images/mdesignlogo.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "4",
+      "group": "2",
+      "title": "Pitch Perfect Poker",
+      "description": "Logos for professional poker dealer and blogger",
+      "image": "/images/mdesignlogo.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "5",
+      "group": "3",
+      "title": "Poker Dezler",
+      "description": "Edited Poker Dealer Magazing Cover",
+      "image": "/images/mdesignlogo.png",
+      "photoshop": true,
+      "photoshopOriginalImage": "/images/mdesignlogo.png"
     }
   ]
 }
