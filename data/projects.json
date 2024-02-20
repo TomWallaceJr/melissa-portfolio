@@ -3,18 +3,18 @@
     {
       "id": "1",
       "group": "1",
-      "title": "Cactus",
-      "description": "A pointy cactus",
-      "image": "/images/mdesignlogo.png",
+      "title": "Clothes Are Cool",
+      "description": "Magazine ads for a clothing company",
+      "image": "/images/clothesarecool.png",
       "photoshop": false,
       "photoshopOriginalImage": "no"
     },
     {
       "id": "2",
-      "group": "2",
-      "title": "Pitch Perfect Poker",
-      "description": "Logos for professional poker dealer and blogger",
-      "image": "/images/mdesignlogo.png",
+      "group": "1",
+      "title": "Clothes Are Cool",
+      "description": "Magazine ads for a clothing company",
+      "image": "/images/clothesarecool2.png",
       "photoshop": false,
       "photoshopOriginalImage": "no"
     },
@@ -23,7 +23,7 @@
       "group": "2",
       "title": "Pitch Perfect Poker",
       "description": "Logos for professional poker dealer and blogger",
-      "image": "/images/mdesignlogo.png",
+      "image": "/images/ppplogo.png",
       "photoshop": false,
       "photoshopOriginalImage": "no"
     },
@@ -32,18 +32,81 @@
       "group": "2",
       "title": "Pitch Perfect Poker",
       "description": "Logos for professional poker dealer and blogger",
-      "image": "/images/mdesignlogo.png",
+      "image": "/images/ppplogobnw.png",
       "photoshop": false,
       "photoshopOriginalImage": "no"
     },
     {
       "id": "5",
+      "group": "2",
+      "title": "Pitch Perfect Poker",
+      "description": "Logos for professional poker dealer and blogger",
+      "image": "/images/ppptable.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "6",
       "group": "3",
-      "title": "Poker Dezler",
-      "description": "Edited Poker Dealer Magazing Cover",
-      "image": "/images/mdesignlogo.png",
-      "photoshop": true,
-      "photoshopOriginalImage": "/images/mdesignlogo.png"
+      "title": "Plant Brochure",
+      "description": "Brochure for plants",
+      "image": "/images/plantbrochure.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "6",
+      "group": "3",
+      "title": "Plant Brochure",
+      "description": "Brochure for plants",
+      "image": "/images/plantbrochure2.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "7",
+      "group": "3",
+      "title": "Plant Brochure",
+      "description": "Brochure for plants",
+      "image": "/images/plantbrochure3.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "8",
+      "group": "3",
+      "title": "Plant Brochure",
+      "description": "Brochure for plants",
+      "image": "/images/plantbrochure3.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "9",
+      "group": "3",
+      "title": "Plant Brochure",
+      "description": "Brochure for plants",
+      "image": "/images/plantbrochure4.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "10",
+      "group": "4",
+      "title": "The Smoke",
+      "description": "Logos and Business Card Design for a poker dealer",
+      "image": "/images/thesmoke.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "11",
+      "group": "4",
+      "title": "The Smoke",
+      "description": "Logos and Business Card Design for a poker dealer",
+      "image": "/images/thesmokecard.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
     }
   ]
 }
