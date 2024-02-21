@@ -49,9 +49,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
       <div className='flex items-center justify-center min-h-screen'>
         <div
           className='modal-box w-full max-w-2xl bg-white p-6 rounded-lg shadow-xl relative'
-          style={{ height: "90vh" }} // Set a fixed height for the modal
+          style={{ height: "90vh" }}
           onClick={(e) => e.stopPropagation()}>
-          {/* Arrows */}
           <AiOutlineLeft
             className='absolute left-10 top-1/2 -translate-y-1/2 text-3xl cursor-pointer hover:text-gray-600'
             onClick={handlePrev}
@@ -63,15 +62,20 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             style={{ fontSize: "2.5rem" }}
           />
 
-          {/* Content area */}
-          <div className='flex justify-center items-center h-full'>
-            <Image
-              src={projects[currentIndex].image}
-              alt={projects[currentIndex].title}
-              height={500} // Fixed height
-              width={500} // Fixed width
-              objectFit='contain' // Ensures the image scales down if it's too big
-            />
+          <div className='flex flex-col justify-center items-center h-full'>
+            <h2 className='font-lalo pb-5 text-center text-3xl font-bold mb-4'>
+              {projects[currentIndex].title}
+            </h2>
+
+            <div className='flex justify-center'>
+              <Image
+                src={projects[currentIndex].image}
+                alt={projects[currentIndex].title}
+                height={500}
+                width={500}
+                objectFit='contain'
+              />
+            </div>
           </div>
         </div>
       </div>
