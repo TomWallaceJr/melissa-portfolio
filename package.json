@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch data/projects.json --port 3001"
+    "json-server": "json-server --watch data/projects.json --port 3001",
+    "dev:all": "concurrently \"npm run dev\" \"npm run json-server\"",
+    "build:all": "npm run build && npm run json-server",
+    "start:all": "npm run start"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
@@ -21,6 +24,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "concurrently": "^8.2.2",
     "daisyui": "^4.7.2",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
