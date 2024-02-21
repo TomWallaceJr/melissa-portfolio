@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { IProjects } from "@/types/projects";
 import Project from "./Project";
-import PhotoshopProject from "./PhotoshopProject";
+// import PhotoshopProject from "./PhotoshopProject";
 import ProjectModal from "./ProjectModal.client";
 
 interface PortfolioSectionProps {
@@ -48,7 +48,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
             onClick={() => handleProjectClick(group)}
             className='cursor-pointer'>
             {groupProjects[0].photoshop ? (
-              <PhotoshopProject project={groupProjects[0]} />
+              <Project project={groupProjects[0]} />
             ) : (
               <Project project={groupProjects[0]} />
             )}
