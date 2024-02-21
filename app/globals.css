@@ -3,3 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define a custom pulse animation */
+@keyframes customPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Apply the animation on hover */
+.hover\:animate-custom-pulse:hover {
+  animation: customPulse 1s infinite;
+}

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, ChangeEvent, FormEvent } from "react";
 
 // Define the form data type
@@ -34,51 +36,63 @@ const EmailForm = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen w-full border'>
+    <div
+      className='flex flex-col items-center justify-center min-h-screen w-full'
+      id='contact'>
       <div className='text-center mb-8'>
-        <h1 className='text-2xl font-bold'>Email Me</h1>
+        <h1 className='font-poppins text-3xl lg:text-5xl font-bold'>
+          Contact Me
+        </h1>
       </div>
-      <div className='container mx-auto p-4 w-full border'>
+      <div className='container mx-auto p-4 w-full lg:max-w-4xl'>
         <form
           onSubmit={handleSubmit}
-          className='form-control w-full max-w-xs border mx-auto'>
-          <label className='label'>
-            <span className='label-text'>Name</span>
-          </label>
-          <input
-            type='text'
-            name='name'
-            value={formData.name}
-            onChange={handleChange}
-            placeholder='Your name'
-            className='input input-bordered w-full max-w-xs'
-          />
+          className='w-full mx-auto lg:grid lg:grid-cols-3 lg:gap-4 items-end'>
+          <div className='lg:col-span-1 lg:flex lg:flex-col lg:mb-2'>
+            <label className='label'>
+              <span className='label-text text-lg lg:text-xl'>Name</span>
+            </label>
+            <input
+              type='text'
+              name='name'
+              value={formData.name}
+              onChange={handleChange}
+              placeholder='Your name'
+              className='input input-bordered w-full mb-4 lg:mb-6 text-lg lg:text-xl'
+            />
 
-          <label className='label'>
-            <span className='label-text'>Email</span>
-          </label>
-          <input
-            type='email'
-            name='email'
-            value={formData.email}
-            onChange={handleChange}
-            placeholder='Your email'
-            className='input input-bordered w-full max-w-xs'
-          />
+            <label className='label'>
+              <span className='label-text text-lg lg:text-xl'>Email</span>
+            </label>
+            <input
+              type='email'
+              name='email'
+              value={formData.email}
+              onChange={handleChange}
+              placeholder='Your email'
+              className='input input-bordered w-full mb-4 lg:mb-6 text-lg lg:text-xl'
+            />
+          </div>
 
-          <label className='label'>
-            <span className='label-text'>Message</span>
-          </label>
-          <textarea
-            name='message'
-            value={formData.message}
-            onChange={handleChange}
-            placeholder='Your message'
-            className='textarea textarea-bordered h-24'></textarea>
+          <div className='lg:col-span-2'>
+            <label className='label'>
+              <span className='label-text text-lg lg:text-xl'>Message</span>
+            </label>
+            <textarea
+              name='message'
+              value={formData.message}
+              onChange={handleChange}
+              placeholder='Your message'
+              className='textarea textarea-bordered w-full h-48 text-lg lg:text-xl'></textarea>
+          </div>
 
-          <button type='submit' className='btn btn-primary mt-4'>
-            Send
-          </button>
+          <div className='lg:col-span-3 text-center'>
+            <button
+              type='submit'
+              className='btn btn-primary w-1/2 lg:px-16 lg:py-3 mt-4 lg:mt-6 text-lg lg:text-xl'>
+              Send
+            </button>
+          </div>
         </form>
       </div>
     </div>

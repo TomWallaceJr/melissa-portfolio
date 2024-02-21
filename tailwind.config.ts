@@ -25,6 +25,9 @@ const config: Config = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      boxShadow: {
+        "bottom-border": "0 4px rgba(0, 0, 0, 0.2)",
+      },
     },
   },
 };

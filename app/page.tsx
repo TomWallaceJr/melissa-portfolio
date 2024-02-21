@@ -13,7 +13,7 @@ export default async function Home() {
       <Navbar />
       <Hero />
       <PortfolioSection projects={projects} />
-      {/* <EmailForm /> */}
+      <EmailForm />
       <Footer />
     </main>
   );

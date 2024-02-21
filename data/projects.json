@@ -98,6 +98,15 @@
       "image": "/images/thesmokecard.png",
       "photoshop": false,
       "photoshopOriginalImage": "no"
+    },
+    {
+      "id": "12",
+      "group": "5",
+      "title": "Size In Magazine Cover",
+      "description": "Magazine cover design",
+      "image": "/images/sizein.png",
+      "photoshop": false,
+      "photoshopOriginalImage": "no"
     }
   ]
 }
