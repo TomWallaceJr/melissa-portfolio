@@ -17,8 +17,8 @@ const config: Config = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["lofi", "dark"],
-    defaultTheme: "lofi",
+    themes: ["nord"],
+    defaultTheme: "nord",
   },
   theme: {
     extend: {

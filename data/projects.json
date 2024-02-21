@@ -50,15 +50,6 @@
       "group": "3",
       "title": "Plant Brochure",
       "description": "Brochure for plants",
-      "image": "/images/plantbrochure.png",
-      "photoshop": false,
-      "photoshopOriginalImage": "no"
-    },
-    {
-      "id": "6",
-      "group": "3",
-      "title": "Plant Brochure",
-      "description": "Brochure for plants",
       "image": "/images/plantbrochure2.png",
       "photoshop": false,
       "photoshopOriginalImage": "no"
@@ -77,7 +68,7 @@
       "group": "3",
       "title": "Plant Brochure",
       "description": "Brochure for plants",
-      "image": "/images/plantbrochure3.png",
+      "image": "/images/plantbrochure.png",
       "photoshop": false,
       "photoshopOriginalImage": "no"
     },

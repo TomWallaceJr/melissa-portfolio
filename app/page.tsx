@@ -1,18 +1,15 @@
-// "use client";
-
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import PortfolioSection from "./components/PortfolioSection";
+import PortfolioSection from "./components/PortfolioSection.client";
 import EmailForm from "./components/EmailForm";
 import { getAllProjects } from "@/api";
 
 export default async function Home() {
   const projects = await getAllProjects();
-  console.log(projects);
 
   return (
-    <main className='font-poppins'>
+    <main>
       <Navbar />
       <Hero />
       <PortfolioSection projects={projects} />
