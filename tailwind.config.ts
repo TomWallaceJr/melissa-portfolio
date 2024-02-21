@@ -24,6 +24,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        lato: ["lato", "sans-serif"],
       },
       boxShadow: {
         "bottom-border": "0 4px rgba(0, 0, 0, 0.2)",

@@ -38,7 +38,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
     <div
       className='container mx-auto p-4 py-20 shadow-bottom-border'
       id='portfolio'>
-      <h1 className='font-poppins mx-auto text-3xl lg:text-5xl font-bold text-center m-5'>
+      <h1 className='font-lato mx-auto text-3xl lg:text-5xl font-bold text-center m-5'>
         Portfolio
       </h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
