@@ -1,12 +1,5 @@
 import Image from "next/image";
 
-import {
-  AiFillInstagram,
-  AiFillFacebook,
-  AiFillLinkedin,
-  AiOutlineMail,
-} from "react-icons/ai";
-
 const Navbar = () => {
   return (
     <div className='sticky top-0 z-50 bg-white shadow-md mb-5 lg:mb-0'>
