@@ -1,18 +1,15 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import PortfolioSection from "./components/PortfolioSection.client";
+import PortfolioSection from "./components/PortfolioSection";
 import EmailForm from "./components/EmailForm";
-import { getAllProjects } from "@/api";
 
-export default async function Home() {
-  const projects = await getAllProjects();
-
+export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
-      <PortfolioSection projects={projects} />
+      <PortfolioSection />
       <EmailForm />
       <Footer />
     </main>

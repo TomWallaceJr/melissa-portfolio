@@ -3,18 +3,14 @@
 import React, { useState } from "react";
 import { IProjects } from "@/types/projects";
 import Project from "./Project";
-// import PhotoshopProject from "./PhotoshopProject";
 import ProjectModal from "./ProjectModal.client";
-
-interface PortfolioSectionProps {
-  projects: IProjects[];
-}
+import projects from "@/data/projects";
 
 interface GroupedProjects {
-  [key: string]: IProjects[];
+  [key: string]: IProjects;
 }
 
-const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
+const PortfolioSection: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentGroup, setCurrentGroup] = useState<string | null>(null);
 
@@ -23,16 +19,15 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
     setModalOpen(true);
   };
 
-  // Use the GroupedProjects type for the accumulator in reduce
-  const projectsByGroup = projects.reduce<GroupedProjects>((acc, project) => {
-    const group = project.group;
-    if (acc[group]) {
-      acc[group].push(project);
-    } else {
-      acc[group] = [project];
+  // Create an object to store the first project of each group
+  const firstProjectsByGroup: GroupedProjects = {};
+
+  // Iterate through the projects and populate firstProjectsByGroup
+  projects.forEach((project) => {
+    if (!firstProjectsByGroup[project.group]) {
+      firstProjectsByGroup[project.group] = project;
     }
-    return acc;
-  }, {});
+  });
 
   return (
     <div
@@ -42,23 +37,21 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ projects }) => {
         Portfolio
       </h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
-        {Object.entries(projectsByGroup).map(([group, groupProjects]) => (
+        {Object.values(firstProjectsByGroup).map((project) => (
           <div
-            key={group}
-            onClick={() => handleProjectClick(group)}
+            key={project.id}
+            onClick={() => handleProjectClick(project.group)}
             className='cursor-pointer'>
-            {groupProjects[0].photoshop ? (
-              <Project project={groupProjects[0]} />
-            ) : (
-              <Project project={groupProjects[0]} />
-            )}
+            <Project project={project} />
           </div>
         ))}
       </div>
       {modalOpen && currentGroup && (
         <ProjectModal
           isOpen={modalOpen}
-          projects={projectsByGroup[currentGroup]}
+          projects={projects.filter(
+            (project) => project.group === currentGroup
+          )}
           onClose={() => setModalOpen(false)}
         />
       )}
