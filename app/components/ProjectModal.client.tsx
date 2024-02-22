@@ -60,7 +60,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
       id='project-modal'
       className='fixed inset-0 z-50 overflow-auto bg-black bg-opacity-40 flex'
       onClick={onClose}>
-      <div className='relative p-8 bg-white w-full max-w-2xl m-auto flex-col flex rounded-lg'>
+      <div className='relative p-4 sm:p-8 bg-white w-full sm:max-w-2xl m-auto flex-col flex rounded-t-lg sm:rounded-lg'>
         <div className='flex justify-between items-center mb-4'>
           <AiOutlineLeft
             className='text-3xl cursor-pointer hover:text-gray-600'
