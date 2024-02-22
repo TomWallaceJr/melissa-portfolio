@@ -17,6 +17,18 @@ const PortfolioSection: React.FC = () => {
   const handleProjectClick = (group: string) => {
     setCurrentGroup(group);
     setModalOpen(true);
+
+    // Wait for the modal to potentially render or ensure it exists in the DOM
+    setTimeout(() => {
+      const element = document.querySelector("#project-modal");
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center",
+        });
+      }
+    }, 0); // Timeout with 0 delay to push execution to the end of the event loop
   };
 
   useEffect(() => {
@@ -52,9 +64,7 @@ const PortfolioSection: React.FC = () => {
   });
 
   return (
-    <div
-      id='portfolio'
-      className='container mx-auto px-4 py-20 shadow-bottom-border fade-in-up'>
+    <div id='portfolio' className=' px-4 py-20 shadow-bottom-border fade-in-up'>
       <h1 className='font-lato text-3xl lg:text-5xl font-bold text-center mb-5'>
         Portfolio
       </h1>
@@ -68,6 +78,7 @@ const PortfolioSection: React.FC = () => {
           </div>
         ))}
       </div>
+
       {modalOpen && currentGroup && (
         <ProjectModal
           isOpen={modalOpen}

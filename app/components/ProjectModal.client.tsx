@@ -56,36 +56,37 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className='fixed inset-0 z-10 overflow-y-auto' onClick={onClose}>
-      <div className='flex items-center justify-center min-h-screen'>
-        <div className='modal-box w-full md:w-[600px] h-[800px] bg-white p-6 rounded-lg shadow-xl relative'>
-          <div className='flex justify-between items-center mb-4'>
-            <AiOutlineLeft
-              className='text-3xl cursor-pointer hover:text-gray-600'
-              onClick={handlePrev}
-            />
-            <div className='flex flex-col items-center'>
-              <h2 className='font-lalo text-center text-3xl font-bold mb-2'>
-                {projects[currentIndex].title}
-              </h2>
-              <p className='font-lalo text-gray-600 text-center mb-2'>
-                {projects[currentIndex].description}
-              </p>
-            </div>
-            <AiOutlineRight
-              className='text-3xl cursor-pointer hover:text-gray-600'
-              onClick={handleNext}
-            />
+    <div
+      id='project-modal'
+      className='fixed inset-0 z-50 overflow-auto bg-black bg-opacity-40 flex'
+      onClick={onClose}>
+      <div className='relative p-8 bg-white w-full max-w-2xl m-auto flex-col flex rounded-lg'>
+        <div className='flex justify-between items-center mb-4'>
+          <AiOutlineLeft
+            className='text-3xl cursor-pointer hover:text-gray-600'
+            onClick={handlePrev}
+          />
+          <div className='flex flex-col items-center'>
+            <h2 className='font-lalo text-center text-3xl font-bold mb-2'>
+              {projects[currentIndex].title}
+            </h2>
+            <p className='font-lalo text-gray-600 text-center mb-2'>
+              {projects[currentIndex].description}
+            </p>
           </div>
-          <div className='flex justify-center'>
-            <Image
-              src={projects[currentIndex].image}
-              alt={projects[currentIndex].title}
-              height={500}
-              width={500}
-              objectFit='contain'
-            />
-          </div>
+          <AiOutlineRight
+            className='text-3xl cursor-pointer hover:text-gray-600'
+            onClick={handleNext}
+          />
+        </div>
+        <div className='flex justify-center'>
+          <Image
+            src={projects[currentIndex].image}
+            alt={projects[currentIndex].title}
+            height={500}
+            width={500}
+            objectFit='contain'
+          />
         </div>
       </div>
       <div className='modal-backdrop' aria-hidden='true'></div>
