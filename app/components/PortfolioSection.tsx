@@ -54,7 +54,7 @@ const PortfolioSection: React.FC = () => {
   return (
     <div
       id='portfolio'
-      className='container mx-auto px-4 py-20 shadow-bottom-border'>
+      className='container mx-auto px-4 py-20 shadow-bottom-border fade-in-up'>
       <h1 className='font-lato text-3xl lg:text-5xl font-bold text-center mb-5'>
         Portfolio
       </h1>

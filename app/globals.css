@@ -20,3 +20,66 @@
 .hover\:animate-custom-pulse:hover {
   animation: customPulse 1s infinite;
 }
+
+@keyframes pencil {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-pencil {
+  animation: pencil 1.5s steps(10, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typing {
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 3s steps(30, end);
+  white-space: nowrap;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 5s; /* Adjust duration as needed */
+  animation-fill-mode: both;
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Adjust the initial Y translation */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation-name: fadeInUp;
+  animation-duration: 3s; /* Adjust duration as needed */
+  animation-fill-mode: both;
+}

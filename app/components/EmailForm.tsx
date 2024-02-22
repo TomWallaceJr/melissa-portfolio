@@ -107,7 +107,7 @@ const EmailForm = () => {
           <div className='lg:col-span-3 text-center'>
             <button
               type='submit'
-              className='btn btn-primary w-1/2 lg:px-16 lg:py-3 mt-4 lg:mt-6 text-lg lg:text-xl'>
+              className='btn bg-blue-400 w-1/2 lg:px-16 lg:py-3 mt-4 lg:mt-6 text-lg lg:text-xl'>
               Send
             </button>
           </div>

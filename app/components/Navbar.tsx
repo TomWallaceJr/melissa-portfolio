@@ -17,7 +17,7 @@ const Navbar = () => {
         </a>
 
         <div className='flex-none'>
-          <ul className='menu menu-horizontal p-0 space-x-4'>
+          <ul className='menu menu-horizontal p-0 space-x-4 md:text-lg'>
             <li>
               <a
                 href='#portfolio'

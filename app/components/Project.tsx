@@ -8,7 +8,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className='relative mb-5 h-80 w-full overflow-hidden group bg-white/50 backdrop-blur-md shadow-xl rounded-lg transition duration-300 ease-in-out hover:scale-105'>
+    <div className='relative mb-5 h-80 w-full overflow-hidden group bg-white/50 backdrop-blur-md shadow-xl rounded-lg transition duration-300 ease-in-out hover:scale-105 '>
       <Image
         src={project.image}
         alt={project.title}

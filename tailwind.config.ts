@@ -17,8 +17,8 @@ const config: Config = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["nord"],
-    defaultTheme: "nord",
+    themes: ["garden"],
+    defaultTheme: "garden",
   },
   theme: {
     extend: {
