@@ -161,6 +161,33 @@ const projects = [
     photoshop: false,
     photoshopOriginalImage: "no",
   },
+  {
+    id: "18",
+    group: "10",
+    title: "Philly Art Article",
+    description: "Mockup magazine article for Philadelphia art scene.",
+    image: "/images/phillyart.png",
+    photoshop: false,
+    photoshopOriginalImage: "no",
+  },
+  {
+    id: "19",
+    group: "10",
+    title: "Philly Art Article",
+    description: "Mockup magazine article for Philadelphia art scene.",
+    image: "/images/phillyart2.png",
+    photoshop: false,
+    photoshopOriginalImage: "no",
+  },
+  {
+    id: "19",
+    group: "11",
+    title: "Butterfly Museum Poster",
+    description: "Poster design for Key West Butterfly Museaum",
+    image: "/images/butterfly.png",
+    photoshop: false,
+    photoshopOriginalImage: "no",
+  },
 ];
 
 export default projects;
