@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: "4",
-    group: "12",
+    group: "2",
     title: "Key West Butterfly Museum Brochure",
     description: "Brochure design for a butterfly museum in Key West Florida",
     image: "/images/keywestfront.png",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     id: "5",
-    group: "12",
+    group: "2",
     title: "Key West Butterfly Museum Brochure",
     description: "Brochure design for a butterfly museum in Key West Florida",
     image: "/images/keywestinside.png",
