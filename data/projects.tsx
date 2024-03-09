@@ -18,7 +18,7 @@ const projects = [
     photoshopOriginalImage: "no",
   },
   {
-    id: "20",
+    id: "4",
     group: "12",
     title: "Key West Butterfly Museum Brochure",
     description: "Brochure design for a butterfly museum in Key West Florida",
@@ -27,7 +27,7 @@ const projects = [
     photoshopOriginalImage: "no",
   },
   {
-    id: "21",
+    id: "5",
     group: "12",
     title: "Key West Butterfly Museum Brochure",
     description: "Brochure design for a butterfly museum in Key West Florida",
