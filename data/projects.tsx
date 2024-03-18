@@ -206,6 +206,16 @@ const projects = [
     photoshop: false,
     photoshopOriginalImage: "no",
   },
+  {
+    id: "20",
+    group: "12",
+    title: "Pitch Perfect Poker",
+    description:
+      "A logo I deseigned for a professional poker dealers blog and website.",
+    image: "/images/ppoker2.png",
+    photoshop: false,
+    photoshopOriginalImage: "no",
+  },
 ];
 
 export default projects;
