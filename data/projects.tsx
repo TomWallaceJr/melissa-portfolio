@@ -212,7 +212,7 @@ const projects = [
     title: "Pitch Perfect Poker",
     description:
       "A logo I deseigned for a professional poker dealers blog and website.",
-    image: "/images/ppoker2.png",
+    image: "/images/pppoker2.png",
     photoshop: false,
     photoshopOriginalImage: "no",
   },
